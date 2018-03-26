@@ -24,8 +24,13 @@ gem 'redis', '~> 4.0'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
+
+# Use figaro to store api keys
 gem 'figaro', '1.1.1'
+gem 'whenever', '0.10.0', :require => false
 gem 'twitter', '6.2.0'
+
+# Use sidekiq to perfom daily twitter pull
 gem 'sidekiq', '5.1.1'
 gem 'sidekiq-scheduler', '2.2.1'
 
