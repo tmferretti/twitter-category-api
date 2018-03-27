@@ -19,8 +19,12 @@
 
 # Learn more: http://github.com/javan/whenever
 
-# every 1.day, at: ['12:00 am'] do
 
-# every 1.minute do
-# 	runner "Category.get_daily_tweets"
-# end
+set :environment, "development"
+set :output, {:error => "log/cron_error_log.log", :standard => "log/cron_log.log"}
+
+
+every 1.day, at: ['12:00 am'] do
+	# runner "Category.get_daily_tweets"
+	rake "twitter_scrape:get_daily_tweets"
+end
