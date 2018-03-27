@@ -26,9 +26,16 @@ gem 'redis', '~> 4.0'
 # gem 'rack-cors'
 
 # Use figaro to store api keys
-gem 'figaro', '1.1.1'
-gem 'whenever', '0.10.0', :require => false
-gem 'twitter', '6.2.0'
+gem 'figaro', '~> 1.1.1'
+
+# Use whenever to schedule twitter scrape
+gem 'whenever', '~> 0.10.0', :require => false
+gem 'twitter', '~> 6.2.0'
+
+# use thin for ssl cert
+gem 'thin', '~> 1.7.2'
+
+gem 'aws-sdk', '~> 3'
 
 # Use sidekiq to perfom daily twitter pull
 # gem 'sidekiq', '5.1.1'
