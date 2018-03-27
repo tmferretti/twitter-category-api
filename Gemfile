@@ -33,7 +33,7 @@ gem 'whenever', '~> 0.10.0', :require => false
 gem 'twitter', '~> 6.2.0'
 
 # use thin for ssl cert
-gem 'thin', '~> 1.7.2'
+# gem 'thin', '~> 1.7.2'
 
 gem 'aws-sdk', '~> 3'
 
